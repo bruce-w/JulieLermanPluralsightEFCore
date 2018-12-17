@@ -1,0 +1,51 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Migrations\20181017081504_initial.cs" />
+    <Compile Remove="Migrations\20181017090051_relationships.cs" />
+    <Compile Remove="Migrations\20181017090350_relationships.cs" />
+    <Compile Remove="Migrations\20181018122156_relationships.cs" />
+    <Compile Remove="Migrations\20181018193417_shadowprops.cs" />
+    <Compile Remove="Migrations\20181018194627_moreshadowprops.cs" />
+    <Compile Remove="Migrations\20181018200620_personfullname.cs" />
+    <Compile Remove="Migrations\20181018203018_columnpersonfullname.cs" />
+    <Compile Remove="Migrations\20181018205512_columnpersonfullname.cs" />
+    <Compile Remove="Migrations\20181018205952_columnpersonfullname.cs" />
+    <Compile Remove="Migrations\20181018210502_columnfullname.cs" />
+    <Compile Remove="Migrations\20181018211446_columnfullname.cs" />
+    <Compile Remove="Migrations\20181018212007_personfullname.cs" />
+    <Compile Remove="Migrations\20181018212506_personfullname.cs" />
+    <Compile Remove="Migrations\20181018212611_personfullname.cs" />
+    <Compile Remove="Migrations\20181018212731_personfullname.cs" />
+    <Compile Remove="Migrations\20181018212909_columnpersonfullname.cs" />
+    <Compile Remove="Migrations\20181018213757_columnpersonfullname.cs" />
+    <Compile Remove="Migrations\20181018215445_columnpersonfullname.cs" />
+    <Compile Remove="Migrations\20181018220804_columnpersonfullname.cs" />
+    <Compile Remove="Migrations\20181018222928_tste.cs" />
+    <Compile Remove="Migrations\20181019082517_personfullname.cs" />
+    <Compile Remove="Migrations\20181019082934_personfullname.cs" />
+    <Compile Remove="Migrations\20181019083121_personfullname.cs" />
+    <Compile Remove="Migrations\20181019083350_personfullname.cs" />
+    <Compile Remove="Migrations\20181019111449_personfullname.cs" />
+    <Compile Remove="Migrations\20181019111651_personfullnamecustomcollumn.cs" />
+    <Compile Remove="Migrations\20181019111828_personfullnamecustomcollumn.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="2.2.0-preview3-35497" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="2.2.0-preview3-35497">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Extensions.Logging.Console" Version="2.2.0-preview3-35497" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SamuraiApp.Domain\SamuraiApp.Domain.csproj" />
+  </ItemGroup>
+
+</Project>
